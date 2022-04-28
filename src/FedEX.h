@@ -8,7 +8,7 @@ class FedEX: public TipoEnvio{
 
     
     public:
-
+    FedEX();
 };
 
 #endif

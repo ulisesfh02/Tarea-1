@@ -5,7 +5,7 @@ class TipoEnvio{
 
 
     public:
-
+    TipoEnvio();
 };
 
 #endif
