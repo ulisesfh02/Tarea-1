@@ -1,7 +1,10 @@
 #ifndef CLASE_FEDEX
 #define CLASE_FEDEX
 
-class FedEX{
+#include "TipoEnvio.h"
+using namespace std;
+
+class FedEX: public TipoEnvio{
 
     
     public:

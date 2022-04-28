@@ -1,7 +1,7 @@
 #ifndef CLASE_TIPOENVIO
 #define CLASE_TIPOENVIO
 
-class tipoEnvio{
+class TipoEnvio{
 
 
     public:
