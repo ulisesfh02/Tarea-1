@@ -6,9 +6,11 @@ using namespace std;
 
 class FedEX: public TipoEnvio{
 
-    
+    int costoBase;
+
     public:
-    FedEX();
+    FedEX(int distancia, int peso);
+    int calculoEnvio();
 };
 
 #endif
