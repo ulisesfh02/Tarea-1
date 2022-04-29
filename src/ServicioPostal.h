@@ -6,9 +6,15 @@ using namespace std;
 
 class ServicioPostal: public TipoEnvio{
 
+    int clase;
 
     public:
-    ServicioPostal();
+    ServicioPostal(int clase, int distancia, int peso);
+    int calculoEnvio();
+    
+    int calculoPrimeraClase();
+    int calculoSegundaClase();
+    int calculoTerceraClase();
 };
 
 #endif

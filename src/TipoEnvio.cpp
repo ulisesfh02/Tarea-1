@@ -2,3 +2,6 @@
 
 TipoEnvio::TipoEnvio(){
 }
+
+TipoEnvio::~TipoEnvio(){
+}
