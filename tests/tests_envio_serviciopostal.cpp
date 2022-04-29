@@ -7,11 +7,11 @@ namespace{
         /// AAA
 
         // Arrange - configurar el escenario
-        ServicioPostal servicioPostal;
+        ServicioPostal servicioPostal(1, 2, 150);
 
         // Act - ejecute la operación
-        int actual = servicioPostal.OperacionEspecial(6);
-        int esperada = 12;
+        int actual = servicioPostal.calculoEnvio();
+        int esperada = 45;
 
         // Assert - valide los resultados
         EXPECT_EQ(esperada, actual);
@@ -21,11 +21,11 @@ namespace{
         /// AAA
 
         // Arrange - configurar el escenario
-        ServicioPostal servicioPostal;
+        ServicioPostal servicioPostal(2, 2, 150);
 
         // Act - ejecute la operación
-        int actual = servicioPostal.OperacionEspecial(6);
-        int esperada = 12;
+        int actual = servicioPostal.calculoEnvio();
+        int esperada = 4.2;
 
         // Assert - valide los resultados
         EXPECT_EQ(esperada, actual);
@@ -34,11 +34,11 @@ namespace{
         /// AAA
 
         // Arrange - configurar el escenario
-        ServicioPostal servicioPostal;
+        ServicioPostal servicioPostal(3, 2, 150);
 
         // Act - ejecute la operación
-        int actual = servicioPostal.OperacionEspecial(6);
-        int esperada = 12;
+        int actual = servicioPostal.calculoEnvio();
+        int esperada = 1.8;
 
         // Assert - valide los resultados
         EXPECT_EQ(esperada, actual);
@@ -47,11 +47,11 @@ namespace{
         /// AAA
 
         // Arrange - configurar el escenario
-        ServicioPostal servicioPostal;
+        ServicioPostal servicioPostal(1, 5, 150);
 
         // Act - ejecute la operación
-        int actual = servicioPostal.OperacionEspecial(6);
-        int esperada = 12;
+        int actual = servicioPostal.calculoEnvio();
+        int esperada = 67.5;
 
         // Assert - valide los resultados
         EXPECT_EQ(esperada, actual);
@@ -60,11 +60,11 @@ namespace{
         /// AAA
 
         // Arrange - configurar el escenario
-        ServicioPostal servicioPostal;
+        ServicioPostal servicioPostal(2, 5, 150);
 
         // Act - ejecute la operación
-        int actual = servicioPostal.OperacionEspecial(6);
-        int esperada = 12;
+        int actual = servicioPostal.calculoEnvio();
+        int esperada = 7.95;
 
         // Assert - valide los resultados
         EXPECT_EQ(esperada, actual);
@@ -73,11 +73,11 @@ namespace{
         /// AAA
 
         // Arrange - configurar el escenario
-        ServicioPostal servicioPostal;
+        ServicioPostal servicioPostal(3, 5, 150);
 
         // Act - ejecute la operación
-        int actual = servicioPostal.OperacionEspecial(6);
-        int esperada = 12;
+        int actual = servicioPostal.calculoEnvio();
+        int esperada = 1.8;
 
         // Assert - valide los resultados
         EXPECT_EQ(esperada, actual);
@@ -86,11 +86,11 @@ namespace{
         /// AAA
 
         // Arrange - configurar el escenario
-        ServicioPostal servicioPostal;
+        ServicioPostal servicioPostal(1, 11, 150);
 
         // Act - ejecute la operación
-        int actual = servicioPostal.OperacionEspecial(6);
-        int esperada = 12;
+        int actual = servicioPostal.calculoEnvio();
+        int esperada = 90;
 
         // Assert - valide los resultados
         EXPECT_EQ(esperada, actual);
@@ -99,11 +99,11 @@ namespace{
         /// AAA
 
         // Arrange - configurar el escenario
-        ServicioPostal servicioPostal;
+        ServicioPostal servicioPostal(2, 11, 150);
 
         // Act - ejecute la operación
-        int actual = servicioPostal.OperacionEspecial(6);
-        int esperada = 12;
+        int actual = servicioPostal.calculoEnvio();
+        int esperada = 11.25;
 
         // Assert - valide los resultados
         EXPECT_EQ(esperada, actual);
@@ -112,11 +112,11 @@ namespace{
         /// AAA
 
         // Arrange - configurar el escenario
-        ServicioPostal servicioPostal;
+        ServicioPostal servicioPostal(3, 11, 150);
 
         // Act - ejecute la operación
-        int actual = servicioPostal.OperacionEspecial(6);
-        int esperada = 12;
+        int actual = servicioPostal.calculoEnvio();
+        int esperada = 1.8;
 
         // Assert - valide los resultados
         EXPECT_EQ(esperada, actual);

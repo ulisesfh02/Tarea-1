@@ -7,11 +7,11 @@ namespace{
         /// AAA
 
         // Arrange - configurar el escenario
-        FedEX fedex;
+        FedEX fedex(400, 7);
 
         // Act - ejecute la operación
-        int actual = fedex.OperacionEspecial(6);
-        int esperada = 12;
+        int actual = fedex.CalculoEnvio();
+        int esperada = 35;
 
         // Assert - valide los resultados
         EXPECT_EQ(esperada, actual);
@@ -20,11 +20,11 @@ namespace{
         /// AAA
 
         // Arrange - configurar el escenario
-        FedEX fedex;
+        FedEX fedex(400, 15);
 
         // Act - ejecute la operación
-        int actual = fedex.OperacionEspecial(6);
-        int esperada = 12;
+        int actual = fedex.CalculoEnvio();
+        int esperada = 45;
 
         // Assert - valide los resultados
         EXPECT_EQ(esperada, actual);
@@ -33,11 +33,11 @@ namespace{
         /// AAA
 
         // Arrange - configurar el escenario
-        FedEX fedex;
+        FedEX fedex(550, 7);
 
         // Act - ejecute la operación
-        int actual = fedex.OperacionEspecial(6);
-        int esperada = 12;
+        int actual = fedex.CalculoEnvio();
+        int esperada = 50;
 
         // Assert - valide los resultados
         EXPECT_EQ(esperada, actual);
@@ -46,11 +46,11 @@ namespace{
         /// AAA
 
         // Arrange - configurar el escenario
-        FedEX fedex;
+        FedEX fedex(550, 15);
 
         // Act - ejecute la operación
-        int actual = fedex.OperacionEspecial(6);
-        int esperada = 12;
+        int actual = fedex.CalculoEnvio();
+        int esperada = 60;
 
         // Assert - valide los resultados
         EXPECT_EQ(esperada, actual);
