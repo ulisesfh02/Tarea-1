@@ -4,13 +4,13 @@
 class TipoEnvio{
 
     protected:
-    int distancia;
-    int peso;
+    double distancia;
+    double peso;
 
     public:
     TipoEnvio();
     ~TipoEnvio();
-    virtual int calculoEnvio() = 0;
+    virtual double calculoEnvio() = 0;
 };
 
 #endif

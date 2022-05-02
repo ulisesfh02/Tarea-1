@@ -9,12 +9,12 @@ class ServicioPostal: public TipoEnvio{
     int clase;
 
     public:
-    ServicioPostal(int clase, int distancia, int peso);
-    int calculoEnvio();
+    ServicioPostal(int clase, double distancia, double peso);
+    double calculoEnvio();
     
-    int calculoPrimeraClase();
-    int calculoSegundaClase();
-    int calculoTerceraClase();
+    double calculoPrimeraClase();
+    double calculoSegundaClase();
+    double calculoTerceraClase();
 };
 
 #endif

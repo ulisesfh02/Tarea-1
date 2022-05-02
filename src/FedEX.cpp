@@ -1,11 +1,11 @@
 #include "FedEX.h"
 
-FedEX::FedEX(int distancia, int peso){
+FedEX::FedEX(double distancia, double peso){
     this->distancia=distancia;
     this->peso=peso;
     this->costoBase=35;
 }
-int FedEX::calculoEnvio(){
+double FedEX::calculoEnvio(){
     int costoEnvio=this->costoBase;
     
     if(this->distancia<500 & this->peso>10){

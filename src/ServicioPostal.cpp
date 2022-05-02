@@ -1,16 +1,18 @@
 #include "ServicioPostal.h"
+#include <iostream>
 
-ServicioPostal::ServicioPostal(int clase, int distancia, int peso){
+ServicioPostal::ServicioPostal(int clase, double peso, double distancia){
     this->clase= clase;
     this->distancia= distancia;
     this->peso= peso;
 }
 
-int ServicioPostal::calculoEnvio(){
-    int costoEnvio=0;
+double ServicioPostal::calculoEnvio(){
+    double costoEnvio=0;
     switch(clase){
         case 1:
             costoEnvio=calculoPrimeraClase();
+            
             break;
         case 2:
             costoEnvio=calculoSegundaClase();
@@ -18,13 +20,12 @@ int ServicioPostal::calculoEnvio(){
         case 3:
             costoEnvio=calculoTerceraClase();
             break;
-        default:
     }
     return costoEnvio;
 }
     
-int ServicioPostal::calculoPrimeraClase(){
-    int costo=0;
+double ServicioPostal::calculoPrimeraClase(){
+    double costo=0;
     if(this->peso>=0 & this->peso<=3){
         costo=this->distancia*0.300;
     } else if(this->peso>=4 & this->peso<=8){
@@ -35,8 +36,8 @@ int ServicioPostal::calculoPrimeraClase(){
     return costo;
 }
 
-int ServicioPostal::calculoSegundaClase(){
-    int costo=0;
+double ServicioPostal::calculoSegundaClase(){
+    double costo=0;
     if(this->peso>=0 & this->peso<=3){
         costo=this->distancia*0.0280;
     } else if(this->peso>=4 & this->peso<=8){
@@ -47,6 +48,6 @@ int ServicioPostal::calculoSegundaClase(){
     return costo;
 }
 
-int ServicioPostal::calculoTerceraClase(){
+double ServicioPostal::calculoTerceraClase(){
     return this->distancia*0.0120;
 }

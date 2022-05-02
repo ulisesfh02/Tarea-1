@@ -9,8 +9,8 @@ class FedEX: public TipoEnvio{
     int costoBase;
 
     public:
-    FedEX(int distancia, int peso);
-    int calculoEnvio();
+    FedEX(double distancia, double peso);
+    double calculoEnvio();
 };
 
 #endif
