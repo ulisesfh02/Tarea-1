@@ -1,5 +1,4 @@
 #include "ServicioPostal.h"
-#include <iostream>
 
 ServicioPostal::ServicioPostal(int clase, double peso, double distancia){
     this->clase= clase;
@@ -12,7 +11,6 @@ double ServicioPostal::calculoEnvio(){
     switch(clase){
         case 1:
             costoEnvio=calculoPrimeraClase();
-            
             break;
         case 2:
             costoEnvio=calculoSegundaClase();
@@ -20,6 +18,8 @@ double ServicioPostal::calculoEnvio(){
         case 3:
             costoEnvio=calculoTerceraClase();
             break;
+        default:
+            costoEnvio=0;
     }
     return costoEnvio;
 }

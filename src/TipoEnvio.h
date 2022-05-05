@@ -8,8 +8,6 @@ class TipoEnvio{
     double peso;
 
     public:
-    TipoEnvio();
-    ~TipoEnvio();
     virtual double calculoEnvio() = 0;
 };
 
