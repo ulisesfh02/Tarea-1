@@ -22,7 +22,6 @@ int main(){
     double totalMontoEnvios = 0;
 
     for(int i=0; i<arregloEnvios.size() ; i++){
-        cout<<arregloEnvios[i]->calculoEnvio()<<endl;
         totalMontoEnvios+=arregloEnvios[i]->calculoEnvio();
     }
     std::cout << "El monto total de los envíos es de " << totalMontoEnvios << endl;
