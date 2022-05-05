@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../src/TipoEnvio.h"
+#include "../src/FedEX.h"
 
 namespace{
 
@@ -10,11 +10,11 @@ namespace{
         FedEX fedex(400, 7);
 
         // Act - ejecute la operación
-        int actual = fedex.CalculoEnvio();
-        int esperada = 35;
+        double actual = fedex.calculoEnvio();
+        double esperada = 35;
 
         // Assert - valide los resultados
-        EXPECT_EQ(esperada, actual);
+        EXPECT_DOUBLE_EQ(esperada, actual);
     }
     TEST(Test_TipoEnvio_FedEX, Test_MenosDeQuinientos_MasDeDiez){
         /// AAA
@@ -23,11 +23,11 @@ namespace{
         FedEX fedex(400, 15);
 
         // Act - ejecute la operación
-        int actual = fedex.CalculoEnvio();
+        int actual = fedex.calculoEnvio();
         int esperada = 45;
 
         // Assert - valide los resultados
-        EXPECT_EQ(esperada, actual);
+        EXPECT_DOUBLE_EQ(esperada, actual);
     }
     TEST(Test_TipoEnvio_FedEX, Test_MasDeQuinientos_MenosDeDiez){
         /// AAA
@@ -36,11 +36,11 @@ namespace{
         FedEX fedex(550, 7);
 
         // Act - ejecute la operación
-        int actual = fedex.CalculoEnvio();
+        int actual = fedex.calculoEnvio();
         int esperada = 50;
 
         // Assert - valide los resultados
-        EXPECT_EQ(esperada, actual);
+        EXPECT_DOUBLE_EQ(esperada, actual);
     }
     TEST(Test_TipoEnvio_FedEX, Test_MasDeQuinientos_MasDeDiez){
         /// AAA
@@ -49,10 +49,10 @@ namespace{
         FedEX fedex(550, 15);
 
         // Act - ejecute la operación
-        int actual = fedex.CalculoEnvio();
+        int actual = fedex.calculoEnvio();
         int esperada = 60;
 
         // Assert - valide los resultados
-        EXPECT_EQ(esperada, actual);
+        EXPECT_DOUBLE_EQ(esperada, actual);
     }
 }
